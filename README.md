@@ -46,7 +46,7 @@ table {float:left}
     - 购买力值低：金钱成本是用户的一大障碍，策略需要告诉家长，什么时候买最优惠最合适，刺激用户    
     
 2. 购买力如何分层？购买力分层下的续报率是否有显著区分度？   
-
+```ipynb
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -457,3 +457,4 @@ fig.show()
 基准购买力**DONE!!!**
 ---
 Next:根据额外指标浮动
+```
