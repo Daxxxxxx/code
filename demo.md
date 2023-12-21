@@ -1,4 +1,4 @@
-# 这是一个 demo 
+# Propensity Score Matching Package for causal evaluation
 
 
 ```python
