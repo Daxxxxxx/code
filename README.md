@@ -45,7 +45,8 @@ table {float:left}
 
     - 购买力值低：金钱成本是用户的一大障碍，策略需要告诉家长，什么时候买最优惠最合适，刺激用户    
     
-2. 购买力如何分层？购买力分层下的续报率是否有显著区分度？   
+2. 购买力如何分层？购买力分层下的续报率是否有显著区分度？
+
 ```ipynb
 import pandas as pd
 import numpy as np
@@ -339,8 +340,7 @@ df_1=df[(df.education_cost!='未填写')&(df.device_price!='未知')]
 df_1['device_price']=df_1['device_price'].astype('float64')
 df['wealth_potential'].hist(bins=130,grid=False,alpha=0.5,color='green')
 plt.show()
-### PCA  
-计算基准购买力：
+### PCA  计算基准购买力：
 df.info()
 df.columns
 df_base=df[df.columns[~df.isna().any()]]
@@ -361,7 +361,7 @@ def pcaPlot(df,n):
     plt.ylim(0.1, 1.02)
     plt.show()
 pcaPlot(df_base_pca,8)
-观察累计方差解释度，选择7个主成分进行降维
+#观察累计方差解释度，选择7个主成分进行降维
 def dimensionReduction(df,df1,n,columns):
     pca = PCA(n_components=n) #选取4个主成分
     x = StandardScaler().fit_transform(df)
