@@ -1,8 +1,4 @@
 # 用户画像五边形
-%%html
-<style>
-table {float:left}
-</style>
 ## 系统课用户购买力demo  
 #### 一、用户范围  
 * 基础学科系统课本周在课用户  
