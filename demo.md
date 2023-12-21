@@ -1,4 +1,4 @@
-# Propensity Score Matching Package for causal evaluation
+# Propensity Score Matching Package for Causal Evaluation
 
 
 ```python
